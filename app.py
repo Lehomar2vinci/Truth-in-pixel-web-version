@@ -5,12 +5,24 @@ import mediapipe as mp
 import warnings
 import threading
 from video_processing import apply_effects, update_effect_settings
+import os
+import parse
 
 # Ignorer les avertissements spécifiques de protobuf
 warnings.filterwarnings("ignore", category=UserWarning,
                         module='google.protobuf')
 
 app = Flask(__name__)
+
+# Back4app ids
+PARSE_APP_ID = '7400ee34-c721-44ea-816a-5e0bc66a6978'
+PARSE_REST_API_KEY = 'CLIENT KEY'
+PARSE_SERVER_URL = 'https://parseapi.back4app.com/'
+
+parse.initialize(PARSE_APP_ID, PARSE_REST_API_KEY)
+parse.serverURL = PARSE_SERVER_URL
+
+
 
 mp_pose = mp.solutions.pose
 pose = mp_pose.Pose()
