@@ -1,4 +1,6 @@
-Flask==2.0.1
-opencv-python
-mediapipe
-parse==1.20.1
+Flask==3.0.3
+mediapipe==0.10.14
+numpy==2.0.1
+opencv_contrib_python==4.10.0.84
+opencv_python==4.10.0.84
+parse==1.20.2
