@@ -38,7 +38,7 @@ flatbuffers==24.3.25
 fonttools>=4.60.2
 fr-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.7.0/fr_core_news_sm-3.7.0-py3-none-any.whl#sha256=37e9f1f6a278a5138fabdabcc92cc559da917f9b24c76f0adf6758720d7eab10
 fsspec==2024.6.1
-geopandas==1.0.1
+geopandas>=1.1.2
 gTTS==2.5.1
 huggingface-hub==0.23.4
 idna==3.7
